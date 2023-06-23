@@ -36,6 +36,8 @@
             button5 = new Button();
             txtContraseña = new TextBox();
             txtUsuario = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -114,11 +116,33 @@
             txtUsuario.TabIndex = 7;
             txtUsuario.TextChanged += txtUsuario_TextChanged;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(420, 368);
+            label1.Name = "label1";
+            label1.Size = new Size(67, 15);
+            label1.TabIndex = 8;
+            label1.Text = "Contraseña";
+            label1.Click += label1_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(194, 368);
+            label2.Name = "label2";
+            label2.Size = new Size(47, 15);
+            label2.TabIndex = 9;
+            label2.Text = "Usuario";
+            label2.Click += label2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(txtUsuario);
             Controls.Add(txtContraseña);
             Controls.Add(button5);
@@ -144,5 +168,7 @@
         private Button button5;
         private TextBox txtContraseña;
         private TextBox txtUsuario;
+        private Label label1;
+        private Label label2;
     }
 }
